@@ -16,6 +16,8 @@
         font-size: 14px;
     }
     header {
+        height: 12vh;
+        min-height: 42px;
     }
 }
 
@@ -24,6 +26,8 @@
         font-size: 16px;
     }
     header {
+        height: 12vh;
+        min-height: 42px;
     }
 }
 
@@ -32,6 +36,7 @@
         font-size: 18px;
     }
     header {
-        height: 86px
+        height: 12vh;
+        min-height: 42px;
     }
 }
