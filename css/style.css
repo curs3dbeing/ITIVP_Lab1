@@ -428,3 +428,36 @@ a {
 .mainBtn:hover::before {
     opacity: 1;
 }
+
+footer {
+    font-family: "MontserratBold", sans-serif;
+}
+
+.footerContainer {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 3%;
+}
+
+.productsFooter, .legalFooter, .appFooter {
+    color: white;
+    font-family: "MontserratBold", sans-serif;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 2%;
+    margin-right: 3%;
+}
+
+.footerLinks {
+    font-size: 1rem;
+    margin-top: 10px;
+}
+
+.footerCopyright {
+    min-height: 7vh;
+    display: flex;
+    justify-content: center;
+    font-family: "MontserratBold", sans-serif;
+    color: gray;
+}
