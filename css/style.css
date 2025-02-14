@@ -121,6 +121,7 @@ a {
 }
 
 .smallSection {
+    position: relative;
     flex: 1;
     min-width: 100%;
     height: 50vh;
@@ -134,8 +135,9 @@ a {
 
 .halfTrees {
     transform: translateY(23%);
-    height: 34.2%;
-    right: 0;
+    height: 100%;
+    right: -2%;
+    bottom: 0;
     position: absolute;
     z-index: 2;
     object-fit: contain;
@@ -154,17 +156,19 @@ a {
 }
 
 .cardBoxImg, .treeBoxImg {
+    height: 125%;
+
     position: absolute;
     right: 0;
 }
 
 .treeBoxImg {
-    right: 10%;
+    right:8%;
 }
 
 .cardBoxText {
     max-width: 43%;
-    font-size: 4vh;
+    font-size: clamp(0.6rem, 4vh, 2vw);
     color: white;
     font-family: "MontserratBold", sans-serif;
     position: absolute;
@@ -176,8 +180,10 @@ a {
 
 .fullGrowthTree {
     position: absolute;
-    height: 50%;
+    height: 100%;
+    width: auto;
     left: 0;
+    bottom: 0;
     object-fit: contain;
     z-index: 2;
 }
@@ -222,11 +228,13 @@ a {
 .bgImgLeft {
     left: -3%;
     top: 50%;
+    height: 85%;
     transform: translateY(-50%);
 }
 
 .bgImgRight {
     right: -7%;
+    height: 85%;
     top: 50%;
     transform: translateY(-50%);
 }
@@ -298,6 +306,7 @@ a {
 }
 
 .road {
+    height: 100px;
     min-height: 70vh;
     position: relative;
     display: flex;
@@ -305,8 +314,60 @@ a {
     justify-content: center;
     align-items: center;
 }
-.location1, .location2, .location3, .location4, .location5, .roadmapBlock1, .roadmapBlock2, .roadmapBlock3, .roadmapBlock4, .roadmapBlock5{
+.location1, .location2, .location3, .location4, .location5{
     position: absolute;
+    width: 4%;
+}
+
+.roadmapBlock1, .roadmapBlock2, .roadmapBlock3, .roadmapBlock4, .roadmapBlock5{
+    position: absolute;
+    width: 11%;
+    height: 60%;
+    border-radius: 6px;
+    min-width: 80px;
+    min-height: 80px;
+    background: rgba(57, 53, 71, 1);
+}
+
+.blockCircle1, .blockCircle2, .blockCircle3, .blockCircle4, .blockCircle5 {
+    position: absolute;
+    top: 10%;
+    z-index: 3;
+    font-family: "MontserratBold", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: clamp(0.4rem, 4.7vh, 1.5vw);
+    min-font-size: 0.4em;
+    color: rgba(57, 53, 71, 1);
+    border-radius: 50%;
+    height: 3vw;
+    width: 3vw;
+    min-height: 25px;
+    min-width: 25px;
+}
+.blockCircle1 {
+    background: rgba(126, 255, 193, 1);
+    left: 22%;
+}
+
+.blockCircle2 {
+    background: rgba(255, 170, 91, 1);
+    left: 35%;
+}
+.blockCircle3 {
+    background: rgba(166, 137, 251, 1);
+    left: 48%;
+}
+
+.blockCircle4 {
+    background: rgba(253, 236, 88, 1);
+    left: 61%;
+}
+
+.blockCircle5 {
+    background: rgba(99, 143, 255, 1);
+    left: 74%;
 }
 
 .location1 {
@@ -323,7 +384,7 @@ a {
 
 .location3 {
     left: 48%;
-    top: 43%;
+    top: 40%;
     z-index: 4;
 }
 
@@ -341,7 +402,15 @@ a {
 
 .roadmapBlock1, .roadmapBlock2, .roadmapBlock3, .roadmapBlock4, .roadmapBlock5 {
     top: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: "MontserratBold", sans-serif;
+    font-size: clamp(0.7em, 2vw, 2.2vh);
+    z-index: 1;
 }
+
 .roadmapBlock1 {
     left: 18%;
 }
@@ -368,6 +437,7 @@ a {
 }
 
 .roadImg {
+    min-height: 300px;
     width: 100%;
     position: absolute;
     transform: translateY(100%);
@@ -376,11 +446,12 @@ a {
 }
 
 .laneImg {
+    min-height: 240px;
     width: 100%;
-    bottom:84%;
+    bottom:85%;
     transform: translateY(123%);
     position: absolute;
-    z-index: 3;
+    z-index: 2;
 }
 
 .highlight {
