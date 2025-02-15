@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <title>Title</title>
 </head>
 <body>
@@ -14,6 +14,14 @@
             <a class="headerMenuItem">Товары</a>
             <a class="headerMenuItem">Свяжитесь с нами</a>
         </div>
+        <img class="mobile_header" src="images/gopopme.png" alt="Логотип для смартфонов">
+        <nav class="mobile_navbar">
+            <button id="menu-toggle">☰</button>
+            <ul id="menu" class="hidden">
+                <li><a href="#">Товары</a></li>
+                <li><a href="#">Свяжитесь с нами</a></li>
+            </ul>
+        </nav>
         <div class="headerLoginPart">
             <button class="headerLoginBtn">Войти</button>
             <button class="headerSignUpBtn">Зарегистрироваться</button>
@@ -30,6 +38,7 @@
                 </div>
                 <button class="mainBtn">Попробуйте бесплатно</button>
             </div>
+            <img class="mobileImg1" src="images/mobile_background.png" alt="">
             <div class="containerImg1">
                 <img class="mainImg1" src="images/background_img_1.png" alt="Первое основное изображение">
             </div>
@@ -105,4 +114,13 @@
     </footer>
 
 </body>
+<script>
+    const toggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+
+    toggle.addEventListener('click', () => {
+       menu.classList.toggle('hidden');
+    });
+
+</script>
 </html>

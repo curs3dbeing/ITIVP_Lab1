@@ -20,6 +20,10 @@ header {
     color: white;
     z-index: 1000;
 }
+
+.mobile_header {
+    display: none;
+}
 header::after {
     content: '';
     position: absolute;
@@ -30,6 +34,22 @@ header::after {
     height: 1px;
     background: linear-gradient(to right, rgba(180, 183, 255, 0),rgba(180, 183, 255, 1),rgba(180, 183, 255, 0));
 }
+
+#menu {
+    position: absolute;
+    top: 5vh;
+    display: flex;
+    list-style: none;
+}
+
+#menu.hidden {
+    display: none;
+}
+
+.mobile_navbar {
+    display: none;
+}
+
 .headerLoginPart {
     display: flex;
     justify-content: center;
@@ -75,6 +95,10 @@ a {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+}
+
+.mobileImg1 {
+    display: none;
 }
 
 .headerSignUpBtn::before {
@@ -190,6 +214,7 @@ a {
 
 .mainSection {
     display: flex;
+    box-shadow: inset -5px 0 100px -3px rgba(0,0,0,0.3), inset 5px 0 5px -3px rgba(0,0,0,0.3);
     justify-content: flex-end;
     align-items: flex-start;
     position: relative;
@@ -199,6 +224,7 @@ a {
 }
 
 .defaultSection {
+    box-shadow: inset -5px 0 100px -3px rgba(0,0,0,0.3), inset 5px 0 5px -3px rgba(0,0,0,0.3);
     min-height: 100vh;
     position: relative;
     display: flex;
@@ -322,12 +348,13 @@ a {
 .roadmapBlock1, .roadmapBlock2, .roadmapBlock3, .roadmapBlock4, .roadmapBlock5{
     position: absolute;
     width: 11%;
-    height: 60%;
+    height: 50%;
     border-radius: 6px;
     min-width: 80px;
     min-height: 80px;
     background: rgba(57, 53, 71, 1);
 }
+
 
 .blockCircle1, .blockCircle2, .blockCircle3, .blockCircle4, .blockCircle5 {
     position: absolute;
