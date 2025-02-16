@@ -16,9 +16,6 @@
         display: grid;
         column-count: 1;
     }
-    footer {
-        display: none;
-    }
     .mainImg1 {
         display: none;
     }
@@ -35,6 +32,7 @@
 
     .blocksMobile {
         display: flex;
+        justify-content: center;
         flex-direction: column;
         align-items: end;
         height: 100%;
@@ -55,8 +53,8 @@
 
     .roadmapBlockMobileGroup {
         display: grid;
-        margin-top: 23%;
-        grid-template-columns: repeat(2, 1fr);
+        margin-top: 13%;
+        grid-template-columns: repeat(2,1fr);
         padding-right: 12%;
     }
 
@@ -102,8 +100,9 @@
     .mobileRoad {
         position: absolute;
         left: 0;
-        height: 100%;
-        width: 100%;
+        min-height: 593px;
+        height: 100vh;
+        width: auto;
         display: block;
         z-index: 1;
     }
@@ -111,23 +110,35 @@
     .roadMobile{
         display: flex;
         flex-direction: column;
+        justify-content: center;
         align-items: end;
         height: 100%;
+        width:30%
     }
 
     .locationBlockMobile {
-        height: 16.666%;
+        width:100%;
+        height: 17.866%;
         display: flex;
         flex-direction: column;
-        justify-content: end;
+        justify-content: flex-end;
     }
 
     .loc1Mobile, .loc2Mobile, .loc3Mobile, .loc4Mobile, .loc5Mobile {
+        display: none;
+        position: absolute;
+        z-index: 100;
+    }
+
+    .loc1Mobile {
+        bottom: 0
     }
 
     .roadmap {
+        width: 100vw;
         flex-direction: row;
         min-height: 593px;
+        height: 100vh;
     }
 
     .locmob {
@@ -391,6 +402,14 @@
     header {
         height: 12vh;
         min-height: 42px;
+    }
+    .headerLogo {
+        height: 30%;
+        width: auto;
+        margin-left: 5%;
+    }
+    .headerMenuItem {
+        font-size: clamp(1rem,2vh,2vw);
     }
 }
 

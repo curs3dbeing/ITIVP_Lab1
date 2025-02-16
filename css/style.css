@@ -320,6 +320,11 @@ a {
     flex-direction: column;
 }
 
+.road_divider_mobile {
+    display: flex;
+    width: 100%;
+}
+
 .secondTextContainer {
     color: white;
     position: relative;
@@ -566,7 +571,7 @@ footer {
 .productsFooter, .legalFooter, .appFooter {
     color: white;
     font-family: "MontserratBold", sans-serif;
-    font-size: 1.5rem;
+    font-size: clamp(1rem,2vh,2vw);
     display: flex;
     flex-direction: column;
     margin-top: 2%;
@@ -574,7 +579,7 @@ footer {
 }
 
 .footerLinks {
-    font-size: 1rem;
+clamp(1rem,2vh,2vw);
     margin-top: 10px;
 }
 
