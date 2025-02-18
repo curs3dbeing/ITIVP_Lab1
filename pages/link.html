@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/responsive.css">
     <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/responsive.css">
     <link rel="stylesheet" href="/css/link.css">
-    <title>Title</title>
+    <title>Link</title>
 </head>
 <body>
 <header>
@@ -15,6 +15,14 @@
         <a class="headerMenuItem">Товары</a>
         <a class="headerMenuItem">Свяжитесь с нами</a>
     </div>
+    <img class="mobile_header" src="/images/gopopme.png" alt="Логотип для смартфонов">
+    <nav class="mobile_navbar">
+        <button id="menu-toggle">☰</button>
+        <ul id="menu" class="hidden">
+            <li><a href="#">Товары</a></li>
+            <li><a href="#">Свяжитесь с нами</a></li>
+        </ul>
+    </nav>
     <div class="headerLoginPart">
         <button class="headerLoginBtn">Войти</button>
         <button class="headerSignUpBtn">Зарегистрироваться</button>
@@ -29,6 +37,8 @@
             <div class="firstTitleDesc">
                 И откройте новые возможности.
             </div>
+            <img class="mobileImg1" src="/images/mobile_background.png" alt="">
+            <div class="gradient-shadow"></div>
             <button class="mainBtn">Попробуйте бесплатно</button>
         </div>
         <div class="containerImg1">
@@ -55,9 +65,9 @@
     <section class="social-section">
         <div class="image-container">
             <img src="/images/phone.svg" alt="Social Network App" class="social-img">
-            <div class="blur-box"></div>
+           <!-- <div class="blur-box"></div>
             <div class="blur-box second"></div>
-            <div class="blur-box third"></div>
+            <div class="blur-box third"></div>-->
         </div>
         <div class="social-content">
             <h1>Discover the social<br>network for users.</h1>
@@ -65,7 +75,21 @@
             <button class="mainBtn">Get started for free</button>
         </div>
     </section>
-    
+
+    <div class="smallSection">
+        <img class="fullGrowthTreeMobile" src="/images/leftTreesMobile.png" alt="">
+        <img class="fullGrowthTree" src="/images/trees.png" alt="">
+        <div class="smallCardBox">
+            <span class="cardBoxText">Мы посадим дерево за каждую NFC карточку, подключенную к вашем профилю</span>
+            <img class="cardBoxImg" src="/images/smallCard.png" alt="">
+            <img class="cardBoxImgMobile" src="/images/mobileCard.png" alt="">
+            <img class="treeBoxImgMobile" src="/images/mobile%20tree.png" alt="">
+            <img class="treeBoxImg" src="/images/tree.png" alt="">
+        </div>
+        <img class="halfTrees" src="/images/halfTrees.png" alt="">
+        <img class="halfTreesMobile" src="/images/rightTreesMobile.png" alt="">
+    </div>
+
     <section class="affiliate-section">
         <div class="affiliate-content">
             <h1>Get benefits and earn with affiliate links.</h1>
@@ -79,29 +103,6 @@
             <div class="blur-box affiliate-two"></div>
         </div>
     </section>
-    <section class="nfc-section">
-        <div class="nfc-image-container">
-            <img src="/images/profile.png" alt="NFC Card and Phone" class="nfc-img">
-            <div class="nfc-card">
-                <div class="nfc-card-content">
-                    <div class="nfc-card-chip"></div>
-                    <div class="nfc-card-info">
-                        <h3>Andrea Johns</h3>
-                        <p>Interior Designer</p>
-                    </div>
-                </div>
-            </div>
-            <div class="nfc-card background">
-                <div class="wave"></div>
-            </div>
-        </div>
-        <div class="nfc-content">
-            <h1>Получите NFC карту и<br>привяжите её к профилю</h1>
-            <p>С помощью NFC карты вы можете легко делиться своим бизнес-профилем с потенциальными клиентами. Всего одним касанием вы мгновенно передаете свою информацию любому. Это отличный способ быстро и легко поделиться своим бизнес-профилем без необходимости использования традиционных визитных карточек.</p>
-            <button class="mainBtn">Начать бесплатно</button>
-        </div>
-    </section>
-
     <section class="pricing-section">
         <div class="pricing-header">
             <h1>Want to enjoy all of the GPM product benefits? Check our plans.</h1>
@@ -229,6 +230,21 @@
     </section>
 </main>
 <footer>
+    <div class="footerContainer">
+        <div class="productsFooter">
+            GPM Продукты
+            <span class="footerLinks">GPM Ссылка</span>
+            <span class="footerLinks">GPM Link</span>
+        </div>
+        <div class="legalFooter">
+            Правила пользования
+            <span class="footerLinks">Соглашения</span>
+        </div>
+        <div class="appFooter">
+            Приложение
+        </div>
+    </div>
+    <div class="footerCopyright">Copyright © 2025 All rights reserved - Gopop.me</div>
 </footer>
 </body>
 </html>
