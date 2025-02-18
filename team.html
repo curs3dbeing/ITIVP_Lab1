@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsiveTeam.css">
+    <title>Title</title>
+</head>
+<body>
+    <header>
+        <div class = "headerMenuPart">
+            <img class ="headerLogo" src="images/logo.png" alt="Логотип">
+            <a class="headerMenuItem">Товары</a>
+            <a class="headerMenuItem">Свяжитесь с нами</a>
+        </div>
+        <img class="mobile_header" src="images/gopopme.png" alt="Логотип для смартфонов">
+        <nav class="mobile_navbar">
+            <button id="menu-toggle">☰</button>
+            <ul id="menu" class="hidden">
+                <li><a href="#">Товары</a></li>
+                <li><a href="#">Свяжитесь с нами</a></li>
+            </ul>
+        </nav>
+        <div class="headerLoginPart">
+            <button class="headerLoginBtn">Войти</button>
+            <button class="headerSignUpBtn">Зарегистрироваться</button>
+        </div>
+    </header>
+    <main class="mainContainer">
+        <section class="teamManagement">
+            <div class="firstTextContainer">
+                <div class="firstTitle">
+                    Удобное и простой управление командой!
+                </div>
+                <div class="firstTitleDesc">
+                    Испытайте все преимущества и присоединяйтесь к нашей команде.
+                </div>
+                <img class="mobileImg1" src="images/mobile_background.png" alt="">
+                <div class="gradient-shadow"></div>
+                <button class="testBtn">Кликай!</button>
+            </div>
+            <img class="teamImg1Mobile" src="images/mobile%20team%20dashboard.png" alt="">
+            <img class="teamImg1" src="images/team%20dashboard4.png" alt="Первое основное изображение">
+            <button class="testBtnMobile">Кликай!</button>
+        </section>
+        <section class="ourTeam">
+            <div class="teamContainer">
+                <span class="teamTitle">
+                    Наша команда
+                </span>
+                <div class="card-container">
+                    <div class="card">
+                        <img src="/images/web-design.svg" alt="card-img1" class="card-img">
+                        <h3 class="card-name">CEO Проекта</h3>
+                        <p class="card-content">С.В. Иванов</p>
+                    </div>
+                    <div class="card">
+                        <img src="/images/web-design.svg" alt="card-img2" class="card-img">
+                        <h3 class="card-name">Back-end разработчик</h3>
+                        <p class="card-content">Н.Р. Алексеев</p>
+                    </div>
+                    <div class="card">
+                        <img src="/images/web-design.svg" alt="card-img3" class="card-img">
+                        <h3 class="card-name">Front-end разработчик</h3>
+                        <p class="card-content">А.А. Петров</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="smallSection">
+            <div class="joinerTeam">
+                <span class="teamTitle" id="joinerTitle">
+                    Присоединяйтесь!
+                </span>
+                <div class="input_button_section">
+                    <input aria-label="" placeholder="Ваша почта" type="email" class="email_team_input">
+                    <button class="submitBtn">Отправить</button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <div class="footerContainer">
+            <div class="productsFooter">
+                GPM Продукты
+                <span class="footerLinks">GPM Ссылка</span>
+                <span class="footerLinks">GPM Link</span>
+            </div>
+            <div class="legalFooter">
+                Правила пользования
+                <span class="footerLinks">Соглашения</span>
+            </div>
+            <div class="appFooter">
+                Приложение
+            </div>
+        </div>
+        <div class="footerCopyright">Copyright © 2025 All rights reserved - Gopop.me</div>
+    </footer>
+
+</body>
+<script>
+    const toggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('menu');
+
+    toggle.addEventListener('click', () => {
+       menu.classList.toggle('hidden');
+    });
+
+</script>
+</html>

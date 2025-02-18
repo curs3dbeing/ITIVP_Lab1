@@ -177,12 +177,15 @@
     }
 
     .firstTextContainer {
+        margin-left: 0;
+
         position: relative;
         display: flex;
         justify-content: normal;
         align-items: center;
         left: 0;
-        height: 100vh;
+        min-height: 1200px;
+        width: 100%;
     }
 
     .containerImg2 {
@@ -397,9 +400,13 @@
         height: 5vh;
         min-height: 7vh;
     }
+
     .firstTextContainer {
-        top: 12vh;
+        min-height: 100%;
+        margin-top: 15%;
+        max-height: 370px;
     }
+
     .roadmapBlock1, .roadmapBlock2, .roadmapBlock3, .roadmapBlock4, .roadmapBlock5 {
         height: 5vh;
         min-height: 7vh;
