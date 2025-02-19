@@ -4,6 +4,19 @@
     font-style: normal;
     font-weight: normal;
 }
+html, body {
+    font-size: 18px;
+}
+.mainBtn {
+    margin-top: 0;
+    width: 25vw;
+    height: 10vh;
+    min-height: 72px;
+
+}
+.mainSection .mainBtn {
+    margin-top: 5vh;
+}
 .card-container {
     display: flex;
     gap: 2vw;
@@ -28,7 +41,7 @@
     color: #FFF;
     text-align: center;
     font-family: Poppins , sans-serif; /*fix*/
-    font-size: 16px;
+    font-size: clamp(1.2rem, 5vh, 1.4vw);
     font-weight: 800;
     line-height: 20px;
     margin-bottom: 10px;
@@ -38,7 +51,7 @@
     color: #FFF;
     text-align: center;
     font-family: Poppins, sans-serif; /*fix*/
-    font-size: 12px;
+    font-size: clamp(0.8rem, 3vh, 1vw);
     font-style: normal;
     font-weight: 500;
     line-height: 16px;
@@ -57,16 +70,16 @@
 }
 .social-content h1 {
     color: #FFF;
-    font-family: Poppins, sans-serif;
-    font-size: clamp(28px, 4vw, 40px);
+    font-family: MontserratBold, sans-serif;
+    font-size: clamp(2.1rem, 7vh, 3vw);
+    line-height: 1.3;
+    margin-bottom: 1.5rem;
     font-weight: 800;
-    line-height: 1.25;
-    margin-bottom: 1rem;
 }
 .social-content p {
     color: #FFF;
-    font-family: Poppins, sans-serif;
-    font-size: clamp(14px, 2vw, 18px);
+    font-family: "MontserratBold", sans-serif;
+    font-size: clamp(1rem, 3.3vh, 1.6vw);
     font-weight: 500;
     line-height: 1.6;
     margin-bottom: 2rem;
@@ -122,17 +135,17 @@
 
 .affiliate-content h1 {
     color: #FFF;
-    font-family: Poppins, sans-serif;
-    font-size: clamp(28px, 4vw, 40px);
+    font-family: "MontserratBold", sans-serif;
+    font-size: clamp(2.1rem, 7vh, 3vw);
+    line-height: 1.3;
+    margin-bottom: 1.5rem;
     font-weight: 800;
-    line-height: 1.25;
-    margin-bottom: 20px;
 }
 
 .affiliate-content p {
     color: #FFF;
-    font-family: Poppins, sans-serif;
-    font-size: clamp(14px, 2vw, 18px);
+    font-family: "MontserratBold", sans-serif;
+    font-size: clamp(1rem, 3.3vh, 1.6vw);
     font-weight: 500;
     line-height: 1.6;
     margin-bottom: 2rem;
@@ -194,11 +207,10 @@
 .pricing-header h1 {
     color: #FFF;
     font-family: "MontserratBold", sans-serif;
-    font-size: clamp(24px, 4vw, 40px);
-    font-weight: 800;
+    font-size: clamp(2.1rem, 7vh, 3vw);
     line-height: 1.3;
+    font-weight: 800;
     max-width: 65vw;
-    margin: 0 auto;
 }
 
 .pricing-container {
@@ -226,16 +238,16 @@
     height: 2rem;
     padding: 8px 24px;
     font-family: MontserratBold, sans-serif;
-    font-size: clamp(1.2rem, 2vw, 1.5rem);;
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
     text-align: center;
     color: #2F2F35;
     font-weight: 600;
     border-radius: 0 8px 8px 8px;
     background: linear-gradient(90deg, #5ED3D0 0%, #89A2FB 100%);
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.10);
-    display: flex; /* Используем flexbox */
-    justify-content: center; /* Центрируем по горизонтали */
-    align-items: center; /* Центрируем по вертикали */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .plan-type::after {
     content: '';
@@ -251,6 +263,7 @@
     list-style: none;
     padding: 0;
     margin-bottom: 32px;
+
 }
 
 .features-list li {
@@ -260,7 +273,7 @@
     margin-bottom: 16px;
     color: #FFF;
     font-family: Poppins, sans-serif;
-    font-size: 16px;
+    font-size: clamp(1rem, 2vh, 1.2vw);
     line-height: 1.5;
 }
 
@@ -277,14 +290,14 @@
     color: #FFF;
     text-align: center;
     font-family: Poppins, sans-serif;
-    font-size: 32px;
+    font-size: clamp(2rem, 4vh, 2.5vw);
     font-style: normal;
     font-weight: 900;
-    line-height: 20px; /* 62.5% */
+    line-height: 1.2
 }
 
 .price span {
-    font-size: 24px;
+    font-size: clamp(1.5rem, 3vh, 2vw);
     font-weight: 500;
 }
 
@@ -293,10 +306,10 @@
     text-align: center;
     margin-top: 11px;
     font-family: Poppins, sans-serif;
-    font-size: 12px;
+    font-size: clamp(0.75rem, 1.5vh, 1vw);
     font-style: normal;
     font-weight: 500;
-    line-height: 13px; /* 108.333% */
+    line-height: 13px;
 }
 
 .price-additional {
@@ -320,7 +333,7 @@
 .faq-section h1 {
     color: #FFF;
     font-family: "MontserratBold", sans-serif;
-    font-size: clamp(28px, 5vw, 40px);
+    font-size: clamp(2.1rem, 7vh, 3vw);
     text-align: center;
     margin-bottom: 3rem;
 }
@@ -362,7 +375,7 @@
 .faq-question h2 {
     color: #FFF;
     font-family: Poppins, sans-serif;
-    font-size: 24px;
+    font-size: clamp(1.5rem, 3vh, 2vw);
     font-weight: 600;
 }
 
@@ -390,7 +403,7 @@
 .faq-answer p {
     color: #FFF;
     font-family: Poppins, sans-serif;
-    font-size: 16px;
+    font-size: clamp(1rem, 2vh, 1.2vw);
     font-style: normal;
     font-weight: 500;
     line-height: 24px; /* 150% */
@@ -407,7 +420,7 @@
 .contact-section h1 {
     color: #FFF;
     font-family: Poppins, sans-serif;
-    font-size: 56px;
+    font-size: clamp(2.5rem, 8vh, 3.5vw);
     font-weight: 800;
     margin-bottom: 48px;
 }
@@ -428,7 +441,7 @@
     padding: 16px 24px;
     color: #FFF;
     font-family: Poppins, sans-serif;
-    font-size: 16px;
+    font-size: clamp(1rem, 2vh, 1.2vw);
     transition: all 0.3s ease;
 }
 
@@ -449,7 +462,9 @@
 
 .contact-form button {
     margin: 0 auto;
-
+}
+.contact-form .mainBtn:before {
+    content: 'Submit';
 }
 @media (max-width: 767px) {
 
@@ -493,7 +508,7 @@
         width: 100%;
     }
 
-    .social-content p {
+    .social-content {
         grid-area: description;
         text-align: center;
         margin: 0 auto;
@@ -568,17 +583,25 @@
     .affiliate-phone {
         transform: none;
     }
-
+    .social-content p{
+        padding-left: 3rem;
+        padding-right: 3rem;
+        text-align: center;
+    }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
-    body {
+    html, body {
         font-size: 16px;
+    }
+    .mainBtn{
+        width: 13rem;
+        height: 5rem;
     }
 
 }
 
 @media (min-width: 1024px) {
-    body {
+    html,body {
         font-size: 18px;
     }
     header {
