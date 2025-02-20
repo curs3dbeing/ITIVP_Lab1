@@ -332,6 +332,8 @@ a {
     color: white;
     position: relative;
     max-height: 100%;
+    top: 10vw;
+    left: 11vw;
     justify-content: left;
     display: flex;
     flex-direction: column;
