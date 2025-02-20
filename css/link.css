@@ -476,7 +476,6 @@ html, body {
         align-items: center;
         justify-content: center;
         padding: 0;
-        margin-top: 5rem;
         width: 100%;
         position: relative;
         z-index: 2;
@@ -507,6 +506,7 @@ html, body {
         grid-area: title;
         text-align: center;
         margin: 0;
+        font-size: clamp(1.5rem, 5vh, 2vw);
     }
 
     .image-container {
@@ -539,10 +539,22 @@ html, body {
         gap: 10vh
     }
     .pricing-card{
-        width: 80vw;
+        width: 70vw;
+    }
+    .features-list li{
+        font-size: clamp(0.8rem, 1vh, 1vw);
+    }
+    .features-list{
+        margin-bottom: 1rem;
+    }
+    .price{
+        margin-top: 0;
+    }
+    .price-note{
+        margin-top: 0;
     }
     .plan-type{
-        left:35%;
+        left:30%;
     }
     .affiliate-section {
         display: grid;
@@ -566,6 +578,7 @@ html, body {
         grid-area: title;
         text-align: center;
         margin: 0;
+        font-size: clamp(1.5rem, 5vh, 2vw);
     }
 
     .affiliate-image-container {
@@ -600,7 +613,7 @@ html, body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        min-height: 100vh;
+        height: 100vh;
         width: 100%;
         overflow: hidden;
         background: linear-gradient(180deg,
@@ -674,6 +687,12 @@ html, body {
 
     .mainImg1 {
         display: none;
+    }
+    .pricing-header h1{
+        font-size: clamp(1.2rem, 3vh, 2vw);
+    }
+    .pricing-btn{
+        width: 60vw;
     }
 
 }
