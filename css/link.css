@@ -31,6 +31,9 @@ html, body {
     text-align: center;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    z-index: 2;
+    filter: drop-shadow(0 0 20px rgba(94, 211, 208, 0.2));
 }
 
 .card img {
@@ -475,6 +478,9 @@ html, body {
         padding: 0;
         margin-top: 5rem;
         width: 100%;
+        position: relative;
+        z-index: 2;
+        filter: drop-shadow(0 0 20px rgba(94, 211, 208, 0.2));
     }
     .card{
         width: 40vw;
@@ -588,6 +594,88 @@ html, body {
         padding-right: 3rem;
         text-align: center;
     }
+
+    .mainSection {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 100vh;
+        width: 100%;
+        overflow: hidden;
+        background: linear-gradient(180deg,
+        rgba(34, 31, 44, 1) 0%,
+        rgba(34, 31, 44, 0.95) 30%,
+        rgba(34, 31, 44, 0.90) 60%,
+        rgba(34, 31, 44, 1) 100%
+        );
+    }
+
+    .firstTextContainer {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        text-align: center;
+        width: 100%;
+        z-index: 2;
+    }
+
+    .firstTitle {
+        width: 90%;
+        font-size: clamp(32px, 8vw, 42px);
+        font-weight: 800;
+        line-height: 1.2;
+        margin-bottom: 1rem;
+        background: linear-gradient(180deg,
+        #FFFFFF 0%,
+        rgba(255, 255, 255, 0.9) 100%
+        );
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+
+    .firstTitleDesc {
+        width: 85%;
+        font-size: clamp(18px, 4vw, 24px);
+        color: rgba(255, 255, 255, 0.8);
+        margin-bottom: 2rem;
+    }
+
+    .gradient-shadow {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 30vh; /* Увеличиваем высоту градиента */
+        background: linear-gradient(
+                to top,
+                rgba(34, 31, 44, 1) 0%,
+                rgba(34, 31, 44, 0.95) 40%,
+                rgba(34, 31, 44, 0.5) 70%,
+                rgba(34, 31, 44, 0) 100%
+        );
+        z-index: 2; /* Поднимаем над изображением, но под контентом */
+    }
+
+    .mobileImg1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -40%);
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+        z-index: 1;
+        opacity: 0.7;
+    }
+
+    .mainImg1 {
+        display: none;
+    }
+
 }
 @media (min-width: 768px) and (max-width: 1023px) {
     html, body {
