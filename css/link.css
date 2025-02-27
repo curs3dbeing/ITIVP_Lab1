@@ -542,7 +542,7 @@ html, body {
         width: 80vw;
     }
     .plan-type{
-        left:35%;
+        left:30%;
     }
     .affiliate-section {
         display: grid;
@@ -618,8 +618,7 @@ html, body {
         align-items: center;
         justify-content: flex-start;
         text-align: center;
-        height: 30vh;
-        max-height: 20vh;
+        min-height: 80vh;
         width: 100%;
         z-index: 2;
     }
@@ -664,7 +663,7 @@ html, body {
 
     .mobileImg1 {
         position: absolute;
-        top: 30%;
+        top: 50%;
         left: 50%;
         transform: translate(-50%, -40%);
         width: 100%;
@@ -677,7 +676,19 @@ html, body {
     .mainImg1 {
         display: none;
     }
-
+    .contact-section{
+        padding: 0;
+    }
+    .pricing-header h1{
+        font-size: clamp(1.5rem, 5vh, 2vw);
+    }
+    .features-list li{
+        font-size: clamp(0.8rem, 1.5vh, 1vw);
+        line-height: 1.2;
+    }
+    .pricing-btn{
+        width: 70%;
+    }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
     html, body {
