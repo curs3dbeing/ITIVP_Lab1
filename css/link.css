@@ -600,7 +600,7 @@ html, body {
         display: flex;
         flex-direction: column;
         align-items: center;
-        min-height: 100vh;
+        min-height: 50vh;
         width: 100%;
         overflow: hidden;
         background: linear-gradient(180deg,
@@ -618,6 +618,8 @@ html, body {
         align-items: center;
         justify-content: flex-start;
         text-align: center;
+        height: 30vh;
+        max-height: 20vh;
         width: 100%;
         z-index: 2;
     }
@@ -649,7 +651,7 @@ html, body {
         bottom: 0;
         left: 0;
         width: 100%;
-        height: 30vh; /* Увеличиваем высоту градиента */
+        height: 10vh; /* Увеличиваем высоту градиента */
         background: linear-gradient(
                 to top,
                 rgba(34, 31, 44, 1) 0%,
@@ -662,7 +664,7 @@ html, body {
 
     .mobileImg1 {
         position: absolute;
-        top: 50%;
+        top: 30%;
         left: 50%;
         transform: translate(-50%, -40%);
         width: 100%;
