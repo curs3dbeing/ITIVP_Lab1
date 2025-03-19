@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/responsive.css">
     <link rel="stylesheet" href="../css/link.css">
+    <script type="module" src="link.js"></script>
     <title>Link</title>
 </head>
 <body>
@@ -225,9 +226,14 @@
     <section class="contact-section" id="contactPage">
         <h1>Contact us</h1>
         <form class="contact-form">
-            <input type="text" placeholder="Your Name/Company" class="form-input">
-            <input type="email" placeholder="Your Email" class="form-input">
-            <textarea placeholder="Your Message" class="form-input message"></textarea>
+            <input type="text" placeholder="Ваше имя/компания" class="form-input">
+            <input type="email" placeholder="Ваша почта" class="form-input">
+            <div class="autocomplete">
+                <input type="text" placeholder="Откуда вы" class="form-input" id="countries">
+            </div>
+            <div class="autocomplete">
+                <textarea placeholder="Ваше сообщение" class="form-input message" id="myInput"></textarea>
+            </div>
             <button type="submit" class="mainBtn">Submit</button>
         </form>
     </section>

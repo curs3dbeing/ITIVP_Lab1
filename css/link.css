@@ -437,7 +437,39 @@ html, body {
     margin: 0 auto;
 }
 
+.autocomplete {
+    min-width: 65vw;
+    position: relative;
+    display: inline-block;
+}
+
+.autocomplete-items {
+    min-width: 66vw;
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    top: 100%;
+    left: 0;
+    right: 0;
+}
+
+.autocomplete-items div {
+    min-width: 100%;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    border-bottom: 1px solid #d4d4d4;
+}
+
+.autocomplete-items div:hover {
+    background-color: #e9e9e9;
+}
+
+
 .form-input {
+    min-width: 65vw;
     background: rgba(57, 53, 71, 0.8);
     border: none;
     border-radius: 12px;
