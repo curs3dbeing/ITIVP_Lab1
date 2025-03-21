@@ -41,7 +41,7 @@
             <div class="firstTitleDesc">
                 И откройте новые возможности.
             </div>
-            <img class="mobileImg1" src="../images/mobile_background.png" alt="">
+            <img class="mobileImg1" src="../images/mobile_background1.png" alt="">
             <div class="gradient-shadow"></div>
             <button class="mainBtn">Попробуйте бесплатно</button>
         </div>
@@ -179,6 +179,42 @@
 
         <button class="mainBtn pricing-btn">Попробуйте бесплатно</button>
     </section>
+    <section class="config-section">
+        <h2>Создайте свой уникальный проект</h2>
+        <p>Выберите необходимые функции и перетащите их в область конфигурации</p>
+        
+        <div class="config-container">
+            <div class="features-pool">
+                <div class="feature-card" draggable="true">
+                    <h3>Аналитика</h3>
+                    <p>Подробная статистика и аналитика вашего проекта</p>
+                </div>
+                <div class="feature-card" draggable="true">
+                    <h3>Безопасность</h3>
+                    <p>Продвинутые механизмы защиты данных</p>
+                </div>
+                <div class="feature-card" draggable="true">
+                    <h3>Интеграция</h3>
+                    <p>Подключение внешних сервисов и API</p>
+                </div>
+                <div class="feature-card" draggable="true">
+                    <h3>Автоматизация</h3>
+                    <p>Автоматические процессы и задачи</p>
+                </div>
+                <div class="feature-card" draggable="true">
+                    <h3>Поддержка</h3>
+                    <p>Автоматическая поддержка проекта CI/CD</p>
+                </div>
+            </div>
+            
+            <div class="config-area">
+                <h3>Ваша конфигурация</h3>
+                <div class="drop-zone" id="dropZone">
+                    <div class="drop-slot empty"></div>
+                </div>
+            </div>
+        </div>
+    </section>
     <section class="faq-section">
         <h1>FAQ</h1>
         <div class="faq-container">
@@ -237,6 +273,7 @@
             <button type="submit" class="mainBtn">Submit</button>
         </form>
     </section>
+    
 </main>
 <footer>
     <div class="footerContainer">
@@ -255,5 +292,6 @@
     </div>
     <div class="footerCopyright">Copyright © 2025 All rights reserved - Gopop.me</div>
 </footer>
+<script src="../js/config.js"></script>
 </body>
 </html>

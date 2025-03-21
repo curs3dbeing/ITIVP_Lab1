@@ -719,6 +719,83 @@ html, body {
         display: none;
     }
 
+    .pricing-header h1{
+        font-size: clamp(1.5rem, 4vh, 2vw);
+    }
+    .features-list li{
+        font-size: clamp(0.8rem, 1.5vh, 1vw);
+    }
+    .pricing-btn{
+        width: 70%;
+    }
+    .firstTextContainer{
+        min-height: 100vh;
+    }
+
+    .config-section {
+        padding: 2rem 1rem;
+        margin-top: 5rem;
+    }
+
+    .config-section h2 {
+        font-size: clamp(1.5rem, 4vh, 2vw);
+        margin-bottom: 1rem;
+    }
+
+    .config-section p {
+        font-size: clamp(0.8rem, 2vh, 1.2vw);
+        padding: 0 1rem;
+    }
+
+    .features-pool {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        padding: 0.5rem;
+        margin: 0 1rem 2rem 1rem;
+    }
+
+    .feature-card {
+        min-height: 100px;
+        padding: 1rem;
+    }
+
+    .feature-card h3 {
+        font-size: clamp(1rem, 2.5vh, 1.2vw);
+    }
+
+    .feature-card p {
+        font-size: clamp(0.8rem, 2vh, 1vw);
+    }
+
+    .config-area {
+        margin: 0 1rem;
+        padding: 1rem;
+    }
+
+    .config-area h3 {
+        font-size: clamp(1.2rem, 3vh, 1.5vw);
+    }
+
+    .drop-zone {
+        min-height: 300px;
+        padding: 0.5rem;
+        gap: 0.5rem;
+    }
+
+    .drop-slot {
+        min-height: 100px;
+        padding: 0.5rem;
+    }
+
+    .drop-slot.empty::after {
+        font-size: clamp(0.8rem, 2vh, 1vw);
+    }
+
+    .delete-btn {
+        width: 20px;
+        height: 20px;
+        font-size: 14px;
+    }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
     html, body {
@@ -729,6 +806,50 @@ html, body {
         height: 5rem;
     }
 
+    .config-section {
+        padding: 3rem 1.5rem;
+    }
+
+    .config-section h2 {
+        font-size: clamp(1.8rem, 5vh, 2.5vw);
+    }
+
+    .config-section p {
+        font-size: clamp(0.9rem, 2.5vh, 1.4vw);
+    }
+
+    .features-pool {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1rem;
+    }
+
+    .feature-card {
+        min-height: 110px;
+    }
+
+    .feature-card h3 {
+        font-size: 1.1rem;
+    }
+
+    .feature-card p {
+        font-size: 0.85rem;
+    }
+
+    .config-area {
+        padding: 1.5rem;
+    }
+
+    .config-area h3 {
+        font-size: 1.3rem;
+    }
+
+    .drop-zone {
+        min-height: 450px;
+    }
+
+    .drop-slot {
+        min-height: 110px;
+    }
 }
 
 @media (min-width: 1024px) {
@@ -739,4 +860,311 @@ html, body {
         height: 12vh;
         min-height: 105px;
     }
+
+    .config-section {
+        padding: 4rem 2rem;
+    }
+
+    .config-section h2 {
+        font-size: clamp(2.1rem, 7vh, 3vw);
+    }
+
+    .config-section p {
+        font-size: clamp(1rem, 3.3vh, 1.6vw);
+    }
+
+    .features-pool {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .feature-card {
+        min-height: 120px;
+    }
+
+    .feature-card h3 {
+        font-size: 1.2rem;
+    }
+
+    .feature-card p {
+        font-size: 0.9rem;
+    }
+
+    .config-area {
+        padding: 2rem;
+    }
+
+    .config-area h3 {
+        font-size: 1.5rem;
+    }
+
+    .drop-zone {
+        min-height: 500px;
+    }
+
+    .drop-slot {
+        min-height: 120px;
+    }
+}
+
+.config-section {
+    padding: clamp(1rem, 5vw, 4rem) clamp(1rem, 3vw, 2rem);
+    background: linear-gradient(180deg,
+        rgba(34, 31, 44, 1) 0%,
+        rgba(34, 31, 44, 0.95) 30%,
+        rgba(34, 31, 44, 0.90) 60%,
+        rgba(34, 31, 44, 1) 100%
+    );
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+.config-container {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(1rem, 3vw, 2rem);
+    width: min(90%, 800px);
+    margin: 0 auto;
+    padding: 0 clamp(0.5rem, 2vw, 1rem);
+    box-sizing: border-box;
+}
+
+.features-pool {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+    gap: clamp(0.5rem, 2vw, 1.5rem);
+    margin-bottom: clamp(1rem, 3vw, 2rem);
+    padding: clamp(0.5rem, 1.5vw, 1rem);
+    background: rgba(57, 53, 71, 0.8);
+    border-radius: clamp(0.5rem, 1.5vw, 12px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.feature-card {
+    background: rgba(57, 53, 71, 0.8);
+    padding: clamp(0.75rem, 2vw, 1.5rem);
+    border-radius: clamp(0.5rem, 1vw, 8px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    cursor: move;
+    transition: all 0.3s ease;
+    position: relative;
+    width: 100%;
+    min-height: clamp(80px, 15vh, 120px);
+    user-select: none;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.feature-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    border-color: #5ED3D0;
+}
+
+.feature-card:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.feature-card h3 {
+    margin-bottom: 0.75rem;
+    color: #FFF;
+    font-size: clamp(1.1rem, 2.5vw, 1.3rem);
+    font-weight: 700;
+    font-family: Poppins, sans-serif;
+    text-align: center;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+
+.feature-card h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 40px;
+    height: 2px;
+    background: linear-gradient(90deg, #5ED3D0, #89A2FB);
+    border-radius: 2px;
+}
+
+.feature-card p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: clamp(0.85rem, 2vw, 0.95rem);
+    margin: 0;
+    text-align: center;
+    line-height: 1.5;
+    font-family: Poppins, sans-serif;
+    font-weight: 400;
+}
+
+.config-area {
+    background: rgba(57, 53, 71, 0.8);
+    padding: clamp(1rem, 3vw, 2rem);
+    border-radius: clamp(0.5rem, 1vw, 8px);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.config-area h3 {
+    margin-bottom: 1rem;
+    color: #FFF;
+    text-align: center;
+    font-family: Poppins, sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.drop-zone {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(0.5rem, 1.5vw, 1rem);
+    padding: clamp(0.5rem, 1.5vw, 1rem);
+    background: rgba(57, 53, 71, 0.8);
+    border-radius: clamp(0.5rem, 1vw, 8px);
+    min-height: clamp(200px, 50vh, 500px);
+    transition: all 0.3s ease;
+    width: 100%;
+    box-sizing: border-box;
+    cursor: copy;
+}
+
+.drop-zone::before {
+    content: '+';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    color: rgba(255, 255, 255, 0.3);
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.drop-zone.drag-over::before {
+    opacity: 1;
+}
+
+.drop-slot {
+    background: rgba(57, 53, 71, 0.8);
+    border: 2px dashed rgba(255, 255, 255, 0.2);
+    border-radius: clamp(0.5rem, 1vw, 8px);
+    min-height: clamp(80px, 15vh, 120px);
+    padding: clamp(0.5rem, 1.5vw, 1rem);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    box-sizing: border-box;
+    cursor: copy;
+}
+
+.drop-slot.drag-over {
+    background: rgba(57, 53, 71, 1);
+    border-color: #5ED3D0;
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.drop-slot.empty {
+    background: rgba(57, 53, 71, 0.8);
+    cursor: copy;
+}
+
+.drop-slot.empty::after {
+    content: 'Перетащите функцию сюда';
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.9rem;
+    opacity: 0.7;
+    font-family: Poppins, sans-serif;
+}
+
+.drop-slot:not(.empty) {
+    border-style: solid;
+    border-color: #5ED3D0;
+    background: rgba(57, 53, 71, 0.8);
+}
+
+.delete-btn {
+    position: absolute;
+    top: clamp(0.5rem, 1vw, 10px);
+    right: clamp(0.5rem, 1vw, 10px);
+    width: clamp(20px, 3vw, 24px);
+    height: clamp(20px, 3vw, 24px);
+    border-radius: 50%;
+    background: #dc3545;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(14px, 2vw, 16px);
+    line-height: 1;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.delete-btn:hover {
+    background: #c82333;
+}
+
+@media (max-width: 767px) {
+    .config-section {
+        margin-top: clamp(3rem, 8vh, 5rem);
+    }
+
+    .features-pool {
+        grid-template-columns: 1fr;
+        margin: 0 clamp(0.5rem, 2vw, 1rem) clamp(1rem, 3vw, 2rem) clamp(0.5rem, 2vw, 1rem);
+    }
+
+    .config-area {
+        margin: 0 clamp(0.5rem, 2vw, 1rem);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .features-pool {
+        grid-template-columns: repeat(auto-fit, minmax(min(200px, 100%), 1fr));
+    }
+}
+
+@media (min-width: 1024px) {
+    .features-pool {
+        grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+    }
+}
+
+.config-section h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+    color: #FFF;
+    font-family: "MontserratBold", sans-serif;
+    font-size: clamp(2.1rem, 7vh, 3vw);
+    line-height: 1.3;
+    font-weight: 800;
+}
+
+.config-section p {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 2rem;
+    font-family: "MontserratBold", sans-serif;
+    font-size: clamp(1rem, 3.3vh, 1.6vw);
+    font-weight: 500;
+    line-height: 1.6;
 }

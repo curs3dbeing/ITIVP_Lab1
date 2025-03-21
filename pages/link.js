@@ -80,7 +80,6 @@ function handleMouseMove(e) {
         Math.max(initialHeight, startHeight + (e.clientY - startY)),
         500
     );
-
     textarea.style.height = `${newHeight}px`;
 }
 
