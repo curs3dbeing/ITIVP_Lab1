@@ -37,7 +37,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.querySelectorAll('.feature-card').forEach(card => {
         card.addEventListener('dragstart', function(e) {
             draggedCard = this;
-            this.style.opacity = '0.4';
+            this.style.opacity = '1';
         });
 
         card.addEventListener('dragend', function(e) {
@@ -85,7 +85,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             clone.addEventListener('dragstart', function(e) {
                 draggedCard = this;
-                this.style.opacity = '0.4';
+                this.style.opacity = '1';
             });
 
             clone.addEventListener('dragend', function(e) {
