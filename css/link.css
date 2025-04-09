@@ -409,7 +409,7 @@ html, body {
     font-size: clamp(1rem, 2vh, 1.2vw);
     font-style: normal;
     font-weight: 500;
-    line-height: 24px; /* 150% */
+    line-height: 24px;
 }
 
 
@@ -454,7 +454,7 @@ html, body {
 }
 
 .autocomplete-items {
-    min-width: 66vw;
+    min-width: 68vw;
     position: absolute;
     border: 1px solid #d4d4d4;
     border-bottom: none;
