@@ -42,6 +42,24 @@ function autocomplete(inp, arr) {
     });
 }
 
+function trimInput(event) {
+    event.target.value = event.target.value.trimStart();
+}
+
+const inputs = document.querySelectorAll('.form-input');
+
+inputs.forEach(input => {
+    input.addEventListener('input', trimInput);
+});
+
+const form = document.querySelector('.contact-form');
+form.addEventListener('submit', (event) => {
+    inputs.forEach(input => {
+        input.value = input.value.trim();
+    });
+});
+
+
 const messages = ['Здравствуйте, мы хотим с вами сотрудничать.', 'Здравствуйте, мы хотим пользоваться вашим проектом.', 'Здравствуйте, мы хотим поддержать развитие вашего стартапа.', 'Здравствуйте, мы хотим заняться спонсорством вашей идеи.'];
 const countries = ['Беларусь', 'Россия', 'Украина', 'Казахстан', 'Соединенные Штаты Америки', 'Чехия', 'Польша', 'Китай', 'Япония'];
 autocomplete(document.getElementById("myInput"), messages);
